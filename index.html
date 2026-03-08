@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IIM Shillong · Elective Bidding Portal</title>
+    <style>
+      /* Avenir font stack — uses system Avenir on macOS/iOS, falls back gracefully */
+      :root {
+        --font: "Avenir Next", "Avenir", "Nunito Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
+      }
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+      body { font-family: var(--font); }
+      ::-webkit-scrollbar { width: 6px; height: 6px; }
+      ::-webkit-scrollbar-track { background: var(--scrollbar-track, #0d1117); }
+      ::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb, #2d3a47); border-radius: 3px; }
+      ::-webkit-scrollbar-thumb:hover { background: var(--scrollbar-thumb-hover, #3d4e60); }
+      input[type=number]::-webkit-inner-spin-button { -webkit-appearance: none; }
+      @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.72} }
+      /* Smooth theme transitions */
+      *, *::before, *::after { transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease; }
+      /* But NOT layout transitions */
+      div[style*="width:"], button { transition: none; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

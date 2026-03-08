@@ -1,0 +1,44 @@
+{
+  "rules": {
+    "students": {
+      "$roll": {
+        ".read": "auth != null",
+        ".write": "auth != null"
+      }
+    },
+    "bids": {
+      ".read": "auth != null",
+      "$courseId": {
+        "$roll": {
+          ".write": "auth != null"
+        }
+      }
+    },
+    "points": {
+      "$roll": {
+        ".read": "auth != null",
+        ".write": "auth != null"
+      }
+    },
+    "subjects": {
+      ".read": "auth != null",
+      ".write": "auth != null"
+    },
+    "reviews": {
+      ".read": "auth != null",
+      "$key": {
+        ".write": "auth != null"
+      }
+    },
+    "activity": {
+      ".read": "auth != null",
+      ".write": "auth != null"
+    },
+    "presence": {
+      ".read": "auth != null",
+      "$roll": {
+        ".write": "auth != null"
+      }
+    }
+  }
+}
